@@ -1,5 +1,8 @@
 const { Telegraf } = require('telegraf')
 
+var binder = require("heroku-bind-port")
+binder()
+
 require('dotenv').config()
 
 const bot = new Telegraf(process.env.TOKEN)
