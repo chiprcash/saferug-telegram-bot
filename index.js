@@ -24,7 +24,8 @@ bot.command('rugfunds', (ctx) => {
     fetch('https://api.bscscan.com/api?module=account&action=balance&address=0x00c6efa79ccd7d184e207ea48f09726e89a33249&tag=latest')
         .then(res => res.json())
         .then(json => {
-            ctx.reply("people lost " + valueBNB(json.result).toFixed(2) + " BNB so far, ser");
+            let donations = valueBNB(json.result)
+            ctx.reply("people lost " + donations.substr(0,donations.indexOf(',')+3) + " BNB so far, ser");
         });
 })
 bot.launch()
