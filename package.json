@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "ethereumjs-units": "^0.2.0",
     "heroku-bind-port": "^1.0.0",
+    "node-fetch": "^2.6.1",
     "telegraf": "^4.3.0"
   }
 }
