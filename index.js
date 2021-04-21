@@ -25,7 +25,7 @@ bot.command('rugfunds', (ctx) => {
         .then(res => res.json())
         .then(json => {
             let donations = valueBNB(json.result)
-            ctx.reply("people lost " + donations.substr(0,donations.indexOf(',')+3) + " BNB so far, ser");
+            ctx.reply("people lost " + donations.substr(0,donations.indexOf('.')+3) + " BNB so far, ser");
         });
 })
 bot.launch()
