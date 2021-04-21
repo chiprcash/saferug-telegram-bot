@@ -11,6 +11,7 @@ bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('sticker', (ctx) => ctx.reply(':thumbsup:'))
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
 bot.command('rugme', (ctx) => ctx.reply("the presale link is " + 'https://app.bounce.finance/fixed-swap/5350' + " ser"))
+bot.command('rugfunds', (ctx) => ctx.reply("people lost 0.73 BNB so far, ser"))
 
 bot.launch()
 
