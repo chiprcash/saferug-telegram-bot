@@ -28,8 +28,8 @@ bot.command('howtobuy', (ctx) => ctx.reply("saferug cannot be bought on pancakes
 bot.command('liq', (ctx) => ctx.reply("due to a blockage in the token smart contract there won't ever be liquidity on pancakeswap or other exchanges. if you bought saferug on pancakeswap this means you bought the wrong saferug token, ser"))
 bot.command('wenrug', (ctx) => ctx.reply("saferug is a presale rug. this means there is no fixed point in time where the team will steal funds. in a presale rug they are stealing the funds on each buy that happens on bounce presale platform"))
 bot.command('v1', (ctx) => ctx.reply("the saferug v1 token gets explained here: " + 'https://docs.saferug.money/security/v1-exploit'))
-bot.command('v2', (ctx) => ctx.reply("the saferug v2 token gets explained here: " + 'https://docs.saferug.money/security/v2'))
-bot.command('soon', (ctx) => ctx.reply("current development plans can be viewed here: " + 'https://docs.saferug.money/in-the-pipeworks/ecosystem'))
+bot.command('v2', (ctx) => ctx.reply("the saferug v2 token gets explained here: " + 'https://docs.saferug.money/security/v2' + " ser"))
+bot.command('soon', (ctx) => ctx.reply("current development plans can be viewed here: " + 'https://docs.saferug.money/in-the-pipeworks/ecosystem' + " ser"))
 bot.command('rugfunds', (ctx) => {
     fetch('https://api.bscscan.com/api?module=account&action=balance&address=0x00c6efa79ccd7d184e207ea48f09726e89a33249&tag=latest')
         .then(res => res.json())
