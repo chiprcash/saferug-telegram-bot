@@ -38,6 +38,12 @@ bot.command('rugfunds', (ctx) => {
             ctx.reply("people lost " + donations.substr(0,donations.indexOf('.')+3) + " BNB so far, ser");
         });
 })
+bot.command('theme', (ctx) => 
+    ctx.forward_message(chat_id='@saferugofficial',
+                        from_chat_id='@saferugofficial',
+                        message_id='2255')
+    ctx.
+)
 bot.launch()
 
 // Enable graceful stop
