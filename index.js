@@ -39,9 +39,7 @@ bot.command('rugfunds', (ctx) => {
         });
 })
 bot.command('theme', (ctx) => {
-    ctx.forward_message(chat_id='@saferugofficial',
-                        from_chat_id='@saferugofficial',
-                        message_id='2255')
+    ctx.telegram.sendAudio('-1001333132713', 'AwACAgQAAx0CT3X9qQACCPJgkNVNa6E1zmAuJzsMqWM8FXPhHQACdBUAAufbiVCafUo9tmzW-R8E')
 })
 bot.launch()
 
