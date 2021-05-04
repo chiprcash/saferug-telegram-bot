@@ -39,7 +39,7 @@ bot.command('rugfunds', (ctx) => {
         });
 })
 bot.command('theme', (ctx) => {
-    Telegram.forward_message('@saferugofficial',
+    ctx.telegram.forward_message('@saferugofficial',
                         '@saferugofficial',
                         '2255')
 })
