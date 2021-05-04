@@ -38,11 +38,7 @@ bot.command('rugfunds', (ctx) => {
             ctx.reply("people lost " + donations.substr(0,donations.indexOf('.')+3) + " BNB so far, ser");
         });
 })
-bot.command('theme', (ctx) => {
-    ctx.forward_message(chat_id='@saferugofficial',
-                        from_chat_id='@saferugofficial',
-                        message_id='2255')
-})
+
 bot.command('test', (ctx) => ctx.reply("current development plans can be viewed here, ser: " + 'https://docs.saferug.money/in-the-pipeworks/ecosystem'))
 
 bot.launch()
