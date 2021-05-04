@@ -39,7 +39,7 @@ bot.command('rugfunds', (ctx) => {
         });
 })
 bot.command('theme', (ctx) => {
-    ctx.telegram.sendAudio(-1001333132713, 'AwACAgQAAx0CT3X9qQACCPJgkNVNa6E1zmAuJzsMqWM8FXPhHQACdBUAAufbiVCafUo9tmzW-R8E')
+    ctx.sendAudio(-1001333132713, 'AwACAgQAAx0CT3X9qQACCPJgkNVNa6E1zmAuJzsMqWM8FXPhHQACdBUAAufbiVCafUo9tmzW-R8E')
 })
 bot.launch()
 
