@@ -19,7 +19,7 @@ bot.help((ctx) => ctx.reply('Send me a sticker'))
 
 bot.command('rugme', (ctx) => ctx.reply("the presale link is " + 'https://app.bounce.finance/fixed-swap/5350' + " ser"))
 bot.command('docs', (ctx) => ctx.reply("the documentation link is " + 'https://docs.saferug.money/' + " ser"))
-bot.command('website', (ctx) => ctx.reply("the wwebsite link is " + 'https://saferug.money/' + " ser"))
+bot.command('website', (ctx) => ctx.reply("the website link is " + 'https://saferug.money/' + " ser"))
 bot.command('twitter', (ctx) => ctx.reply("the twitter link is " + 'https://twitter.com/saferugmoney' + " ser"))
 bot.command('reddit', (ctx) => ctx.reply("the reddit link is " + 'https://www.reddit.com/r/saferugmoney' + " ser"))
 bot.command('discord', (ctx) => ctx.reply("the discord link is " + 'https://discord.gg/JTA3KSrV' + " ser"))
@@ -38,7 +38,11 @@ bot.command('rugfunds', (ctx) => {
             ctx.reply("people lost " + donations.substr(0,donations.indexOf('.')+3) + " BNB so far, ser");
         });
 })
-
+bot.command('theme', (ctx) => {
+    ctx.forward_message(chat_id='@saferugofficial',
+                        from_chat_id='@saferugofficial',
+                        message_id='2255')
+})
 bot.command('test', (ctx) => ctx.reply("current development plans can be viewed here, ser: " + 'https://docs.saferug.money/in-the-pipeworks/ecosystem'))
 
 bot.launch()
