@@ -39,7 +39,7 @@ bot.command('rugfunds', (ctx) => {
         });
 })
 bot.command('theme', (ctx) => {
-    ctx.forward_message(ctx.chat_id='@saferugofficial',
+    ctx.forward_message(chat_id='@saferugofficial',
                         from_chat_id='@saferugofficial',
                         message_id='2255')
 })
