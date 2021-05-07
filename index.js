@@ -43,7 +43,7 @@ bot.command('theme', (ctx) => {
                         '@saferugofficial',
                         '2255')
 })
-bot.command('theme', (ctx) => {
+bot.command('bong', (ctx) => {
     ctx.telegram.forwardMessage('@saferugofficial',
                         '@saferugofficial',
                         '2562')
