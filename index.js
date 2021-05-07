@@ -43,6 +43,11 @@ bot.command('theme', (ctx) => {
                         '@saferugofficial',
                         '2255')
 })
+bot.command('theme', (ctx) => {
+    ctx.telegram.forwardMessage('@saferugofficial',
+                        '@saferugofficial',
+                        '2562')
+})
 bot.launch()
 
 // Enable graceful stop
