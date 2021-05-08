@@ -42,13 +42,13 @@ bot.command('theme', (ctx) => {
     ctx.telegram.forwardMessage('@saferugofficial',
                         '@saferugofficial',
                         '2255')
-    ctx.reply("check out the artist: " + 'https://www.instagram.com/i_contrix/');
+    ctx.reply('https://www.instagram.com/i_contrix/');
                     })
 bot.command('bong', (ctx) => {
     ctx.telegram.forwardMessage('@saferugofficial',
                         '@saferugofficial',
                         '2562')
-    ctx.reply("check out the artist: " + 'https://www.instagram.com/i_contrix/');
+    ctx.reply('https://www.instagram.com/i_contrix/');
 
 })
 bot.launch()
