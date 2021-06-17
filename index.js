@@ -13,7 +13,7 @@ function valueBNB(val){
     return Units.convert(val.toString(), "wei", "eth");
 }
 
-const players = ['jesse','x','zeus','charmander','leon','alex','niall','anze'];
+const players = ['zeus','alf','leon','alex'];
 
 function shuffleArray(array){
     array.sort(()=> Math.random() - 0.5);
