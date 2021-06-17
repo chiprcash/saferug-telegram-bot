@@ -13,29 +13,12 @@ function valueBNB(val){
     return Units.convert(val.toString(), "wei", "eth");
 }
 
-const cars = ['jesse','x','alf','charmander','leon','alex','niall','anze'];
-
-/* Randomize array in-place using Durstenfeld shuffle algorithm */
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-}
-
-function randomChessTournamentGroups(){
-    return shuffleArray(cars);
-}
-
 const bot = new Telegraf(process.env.TOKEN)
 bot.start((ctx) => ctx.reply('Welcome'))
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 
 bot.command('rugme', (ctx) => ctx.reply("the presale link is " + 'https://app.bounce.finance/fixed-swap/5350' + " ser"))
 bot.command('coinflip', (ctx) => ctx.reply(Math.random() >= 0.5 ? "heads" : "tails"))
-bot.command('players', (ctx) => ctx.reply(randomChessTournamentGroups()))
 bot.command('docs', (ctx) => ctx.reply("the documentation link is " + 'https://docs.saferug.money/' + " ser"))
 bot.command('website', (ctx) => ctx.reply("the website link is " + 'https://saferug.money/' + " ser"))
 bot.command('twitter', (ctx) => ctx.reply("the twitter link is " + 'https://twitter.com/saferugmoney' + " ser"))
