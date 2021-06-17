@@ -17,7 +17,7 @@ const bot = new Telegraf(process.env.TOKEN)
 bot.start((ctx) => ctx.reply('Welcome'))
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 
-bot.command('rugme', (ctx) => ctx.reply("the presale link is " + 'https://app.bounce.finance/fixed-swap/5350' + " ser"))
+bot.command('rugme', (ctx) => ctx.reply("the presale link is " + 'https://app.bounce.finance/fixed-swap/5350' + " ser " + Math.random() >= 0.5 ? "heads" : "tails"))
 bot.command('docs', (ctx) => ctx.reply("the documentation link is " + 'https://docs.saferug.money/' + " ser"))
 bot.command('website', (ctx) => ctx.reply("the website link is " + 'https://saferug.money/' + " ser"))
 bot.command('twitter', (ctx) => ctx.reply("the twitter link is " + 'https://twitter.com/saferugmoney' + " ser"))
