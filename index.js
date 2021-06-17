@@ -13,12 +13,24 @@ function valueBNB(val){
     return Units.convert(val.toString(), "wei", "eth");
 }
 
+const players = ['jesse','x','zeus','charmander','leon','alex','niall','anze'];
+
+function shuffleArray(array){
+    array.sort(()=> Math.random() - 0.5);
+}
+
+function randomChessTournamentGroups(){
+    shuffleArray(players);
+    return players;
+}
+
 const bot = new Telegraf(process.env.TOKEN)
 bot.start((ctx) => ctx.reply('Welcome'))
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 
 bot.command('rugme', (ctx) => ctx.reply("the presale link is " + 'https://app.bounce.finance/fixed-swap/5350' + " ser"))
 bot.command('coinflip', (ctx) => ctx.reply(Math.random() >= 0.5 ? "heads" : "tails"))
+bot.command('randomGroups', (ctx) => ctx.reply(randomChessTournamentGroups()))
 bot.command('docs', (ctx) => ctx.reply("the documentation link is " + 'https://docs.saferug.money/' + " ser"))
 bot.command('website', (ctx) => ctx.reply("the website link is " + 'https://saferug.money/' + " ser"))
 bot.command('twitter', (ctx) => ctx.reply("the twitter link is " + 'https://twitter.com/saferugmoney' + " ser"))
