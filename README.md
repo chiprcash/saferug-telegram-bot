@@ -1,1 +1,1 @@
-# bot2
+# Saferug Telegram Bot Commands
