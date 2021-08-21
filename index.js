@@ -30,7 +30,7 @@ bot.help((ctx) => ctx.reply("Send me a sticker"));
 bot.command("rugme", (ctx) =>
   ctx.reply(
     "the presale link is " +
-      "https://app.bounce.finance/fixed-swap/5350" +
+      "https://v1.app.bounce.finance/fixed-swap/5350" +
       " ser"
   )
 );
@@ -69,7 +69,7 @@ bot.command("rugwallet", (ctx) =>
 bot.command("howtobuy", (ctx) =>
   ctx.reply(
     "saferug cannot be bought on pancakeswap or other exchanges. to buy, you have to visit " +
-      "https://app.bounce.finance/fixed-swap/5350" +
+      "https://v1.app.bounce.finance/fixed-swap/5350" +
       " ser"
   )
 );
