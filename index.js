@@ -119,7 +119,11 @@ bot.command("theme", (ctx) => {
   ctx.telegram.forwardMessage("@saferugofficial", "@saferugofficial", "2255");
   ctx.reply("https://www.instagram.com/i_contrix/");
 });
-bot.command("bong", (ctx) => {
+bot.command("customersupport", (ctx) => {
+  ctx.telegram.forwardMessage("@saferugofficial", "@saferugofficial", "10345");
+  ctx.reply("check out Magadisu's rug project https://t.me/rug_mania");
+});
+https: bot.command("bong", (ctx) => {
   ctx.telegram.forwardMessage("@saferugofficial", "@saferugofficial", "2562");
   ctx.reply("https://www.instagram.com/i_contrix/");
 });
