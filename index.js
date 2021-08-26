@@ -57,7 +57,7 @@ bot.command("reddit", (ctx) =>
   )
 );
 bot.command("discord", (ctx) =>
-  ctx.reply("the discord link is " + "https://discord.gg/JTA3KSrV" + " ser")
+  ctx.reply("the discord link is " + "https://discord.gg/AXut5uZQ8n" + " ser")
 );
 bot.command("rugwallet", (ctx) =>
   ctx.reply(
