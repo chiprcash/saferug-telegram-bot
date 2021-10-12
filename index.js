@@ -34,6 +34,13 @@ bot.command("rugme", (ctx) =>
       " ser"
   )
 );
+bot.command("merch", (ctx) =>
+  ctx.reply(
+    "the merch link is " +
+      "https://saferug.threadless.com/" +
+      " ser"
+  )
+);
 bot.command("coinflip", (ctx) =>
   ctx.reply(Math.random() >= 0.5 ? "heads" : "tails")
 );
